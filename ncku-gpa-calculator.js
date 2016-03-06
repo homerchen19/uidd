@@ -155,6 +155,7 @@
                         if(className.search("公民與歷史") != -1)
                             coreGenPart[2] += credit;
                         break;
+                }
             }
         })
         return [gpaPart, creditPart, json, coreGenPart, overGenPart]
