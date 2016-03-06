@@ -28,7 +28,6 @@
             // get all the submit button name
             var semesterNames = getSemesterName();
             var allClass = []
-            
             // loop all the submit button
             $.each(semesterNames, function(key, name){
                 var scoreAndCredit = []
@@ -53,9 +52,11 @@
     function showResult(gpaScore, allClass, semesterNames, coreGen, overGen){
         //if it is not firefox, print the full result
         if(!$.browser.mozilla){
-            var thead0 = "<tr><td><b>核心通識</b></td><td><b>學分</b></td><td style='border-left: 1px solid black'><b>跨領域通識</b></td><td><b>學分</b></td></tr>"
-            var tbody0 = "<tr><td>基礎國文</td><td>"+ coreGen[0] +"</td><td style='border-left: 1px solid black'>人文學</td><td>"+ overGen[0] +"</td></tr>" +
-                         "<tr><td>英文</td><td>"+ coreGen[1] +"</td><td style='border-left: 1px solid black'>社會科學</td><td>"+ overGen[1] +"</td></tr>" +
+            var thead0 =
+                         "<tr><td><b>核心通識</b></td><td><b>學分</b></td><td style='border-left: 1px solid black'><b>跨領域通識</b></td><td><b>學分</b></td></tr>"
+            var tbody0 = 
+                        "<tr><td>基礎國文</td><td>"+ coreGen[0] +"</td><td style='border-left: 1px solid black'>人文學</td><td>"+ overGen[0] +"</td></tr>" +
+                        "<tr><td>英文</td><td>"+ coreGen[1] +"</td><td style='border-left: 1px solid black'>社會科學</td><td>"+ overGen[1] +"</td></tr>" +
                          "<tr><td>公民與歷史</td><td>"+ coreGen[2] +"</td><td style='border-left: 1px solid black'>自然與工程科學</td><td>"+ overGen[2] +"</td></tr>" +
                          "<tr><td>哲學與藝術</td><td>"+ coreGen[3] +"</td><td style='border-left: 1px solid black'>生命科學與健康</td><td>"+ overGen[3] +"</td></tr>"
 
@@ -183,5 +184,4 @@
         return semesterNames
     }
 })();
-
 
