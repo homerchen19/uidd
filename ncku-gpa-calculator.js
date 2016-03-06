@@ -52,6 +52,7 @@
     function showResult(gpaScore, allClass, semesterNames, coreGen, overGen){
         //if it is not firefox, print the full result
         if(!$.browser.mozilla){
+            var header = "<h3>Your GPA: "+ gpaScore + "</h3>"
             var thead0 =
                          "<tr><td><b>核心通識</b></td><td><b>學分</b></td><td style='border-left: 1px solid black'><b>跨領域通識</b></td><td><b>學分</b></td></tr>"
             var tbody0 = 
