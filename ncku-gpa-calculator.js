@@ -28,6 +28,7 @@
             // get all the submit button name
             var semesterNames = getSemesterName();
             var allClass = []
+            
             // loop all the submit button
             $.each(semesterNames, function(key, name){
                 var scoreAndCredit = []
@@ -130,7 +131,8 @@
                 score = gpaScore(score);
                 gpaPart = gpaPart + score * credit
                 creditPart = creditPart + credit
-                case "人文學":
+                switch(gen) {
+                    case "人文學":
                         overGenPart[0] += credit;
                         break;
                     case "社會科學":
