@@ -35,8 +35,8 @@ body {
 .dropdown-menu li a{
     color: #EAEADB;
     margin-top: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 15px 10px;
+
 }
 
 .dropdown:hover .dropdown-menu {
