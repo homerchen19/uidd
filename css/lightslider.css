@@ -19,6 +19,7 @@
 .lightSlider {
     overflow: hidden;
     margin: 0;
+    height: 1important;
 }
 .lSSlideWrapper {
     max-width: 100%;
@@ -73,17 +74,18 @@
 
 /* Pager */
 .lSSlideOuter .lSPager.lSpg {
-    margin: 10px 0 0;
+    margin-left: 5px;
     padding: 0;
-    text-align: center;
+    text-align: left;
+    
 }
 .lSSlideOuter .lSPager.lSpg > li {
     cursor: pointer;
     display: inline-block;
-    padding: 0 5px;
+    padding: 0 3px;
 }
 .lSSlideOuter .lSPager.lSpg > li a {
-    background-color: #222222;
+    background-color: #949494;
     border-radius: 30px;
     display: inline-block;
     height: 8px;
@@ -96,7 +98,7 @@
     transition: all 0.5s linear 0s;
 }
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
-    background-color: #428bca;
+    background-color: #E6E6DA;
 }
 .lSSlideOuter .media {
     opacity: 0.8;

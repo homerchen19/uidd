@@ -1,15 +1,24 @@
 $(function(){
     
     $(document).ready(function() {
-        $('#lightSlider').lightSlider({
-            gallery: true,
-            item:1,
+        $('#lightSlider_1').lightSlider({
+            enableDrag: false,
+            speed: 500,
+            pause: 3000,
+            auto: true,
+            loop: true,
+            gallery: false,
+            item: 1,
+            galleryMargin: -20,
+            slideMargin: 0
+        });
+        $('#lightSlider_2').lightSlider({
+            speed: 500,
+            pause: 3000,
+            gallery: false,
+            item: 4,
             vertical: true,
-            verticalHeight: 295,
-            vThumbWidth: 50,
-            thumbItem:8,
-            thumbMargin:4,
-            slideMargin:0
+            slideMargin: 0
         });
     });
 });
