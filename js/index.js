@@ -23,8 +23,24 @@ $(function(){
             slideMargin: 0
         });
         
-        $('.sliderImage').hover(function(){
-           console.log($(this).attr("src")); 
+        $('.sliderImage').mouseover(function(){
+            if($(this).attr("id") == "pic1" ){
+                $('.modal').modal('hide');
+                $('.modal-backdrop').remove();
+                $('#pic1Modal').modal();
+            }
+                
+            else if($(this).attr("id") == "pic2" ) {
+                $('.modal').modal('hide');
+                $('.modal-backdrop').remove();
+                $('#pic2Modal').modal();
+            }
         });
+        
+        $('.sliderImage').mouseout(function(){
+            $('.modal').modal('hide');
+            $('.modal-backdrop').remove();
+        });
+        
     });
 });

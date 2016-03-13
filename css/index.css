@@ -142,3 +142,34 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+.sliderImage {
+    z-index: 9999;
+}
+
+.modalImage {
+    width: 100%;
+}
+
+.modal {
+    width: 50%;
+    left: 24%;
+    top: 7%;
+}
+
+div.modal-content {
+    background-color: #797979;
+}
+
+.modal-backdrop {
+    width: 50%;
+    left: 24%;
+    top: 7%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.modalButton {
+    width: 80%;
+    text-align: center;
+    background-color: white;
+}
