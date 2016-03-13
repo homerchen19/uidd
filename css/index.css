@@ -154,7 +154,7 @@ body {
 .modal {
     width: 50%;
     left: 24%;
-    top: 7%;
+    top: 21%;
 }
 
 div.modal-content {
@@ -164,7 +164,7 @@ div.modal-content {
 .modal-backdrop {
     width: 50%;
     left: 24%;
-    top: 7%;
+    top: 21%;
     background-color: rgba(255, 255, 255, 0);
 }
 
