@@ -8,7 +8,8 @@ body {
 }
 
 .navbar {
-    min-height: 120px;
+	/*try try*/
+  	min-height: 120px;
 }
 
 .navbar-nav > li > a{
